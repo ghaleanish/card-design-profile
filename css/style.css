@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: san-sarif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  flex-direction: column;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+}
+.card .cover-image {
+  width: 100%;
+  height: 150px;
+}
+.card .cover-image img {
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card .profile-image {
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .profile-image img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-top: -60px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: block;
+}
+.card .profile-image img:hover{
+    transform:scale(1.2);
+}
+.card .title {
+  margin: 10px;
+  text-align: center;
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+.card .title p{
+    padding-top:2px;
+    font-size: 14px;
+    color:gray;
+}
+.card .rating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card .rating .yellow{
+    color:#ffc600;
+
+}
+.card .rating .none{
+    color:gray;
+}
+.card .description {
+  text-align: center;
+  font-weight: lighter;
+}
+.card .icon {
+  text-align: center;
+  padding: 20px 0;
+}
+.card .icon a {
+  padding: 0 18px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#1877f2;
+}
+.card .icon a:hover{
+    color:#1877f2;
+    transform:scale(1.5);
+
+}
+.card .btn {
+    text-align: center;
+    padding-bottom:20px;
+   
+    
+}
+.card .btn button{
+    padding:10px 40px;
+    border-radius: 10px;
+    color:white;
+    background-color: #1877f2;
+    font-weight: bold;
+    font-size: medium;
+}
+.card .btn button:hover{
+    background-color: rgb(104, 245, 85);
+    color:white;
+}
